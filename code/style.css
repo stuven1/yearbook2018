@@ -1,0 +1,120 @@
+html {
+  background: #000000;
+  color: #black;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+body{
+  padding-bottom: 100px;
+}
+
+h1{
+  font-size: 50px;
+  font-family: Monospace;
+  text-align: center;
+  color: #fe3525;
+}
+
+p{
+font-size:20px;
+font-family:Monospace;
+text-align: center;
+/* color: #fe3525; */
+}
+
+.logo-technigo {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+.logo img {
+  width: 100px;
+  margin-top: 60px;
+}
+
+.student {
+width: calc(25% - 20px);
+/* float: left; */
+margin: 10px;
+background: #ffffff;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 30px;
+box-shadow: 7px, 7px,6px;
+}
+
+.container{
+  /* width: 800px; */
+  /* height: 400px; */
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.image{
+  margin:10px;
+}
+
+.student img{
+  width: 80%;
+  border-style; white
+}
+
+footer{
+  position: center
+}
+
+.yearbook {
+    overflow: auto;
+}
+
+.yearbook:after {
+    content: "";
+    clear: both;
+}
+
+/*First row - color blue*/
+.student:nth-child(1) p,
+.student:nth-child(2) p,
+.student:nth-child(3) p,
+.student:nth-child(4) p{
+  color: blue;
+}
+
+.student:nth-child(5) p,
+.student:nth-child(6) p,
+.student:nth-child(7) p,
+.student:nth-child(8) p{
+  color: #f79320;
+}
+.student:nth-child(9) p,
+.student:nth-child(10) p,
+.student:nth-child(11) p,
+.student:nth-child(12) p{
+  color: #ffaec1;
+}
+
+.student:nth-child(13) p,
+.student:nth-child(14) p,
+.student:nth-child(15) p{
+  color: #fe3525;
+}
+
+/* MOBILE-SIZE */
+@media (max-width: 600px) {
+  .student {
+    width: calc(100% - 20px);
+  }
+}
+/* TABLETS-SIZE */
+@media (min-width: 600px) and (max-width: 900px){
+  .student{
+    width: calc(50% - 20px);
+  }
+}
